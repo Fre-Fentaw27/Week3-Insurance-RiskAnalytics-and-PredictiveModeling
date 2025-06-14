@@ -98,7 +98,7 @@ Loss Ratio Heatmap by Province and Vehicle Type
 Temporal Trend of Monthly Claims vs Premiums
 Vehicle Make Risk Profile (Top 10 highest/lowest claim ratios)
 
-### Data Version Control (DVC)
+### Task 2: Data Version Control (DVC)
 
 📌 Overview
 This project uses DVC to version large datasets, models, and pipelines alongside Git. DVC tracks data files in remote storage (e.g., S3, local) while Git manages metadata (.dvc files) for reproducibility.
