@@ -106,25 +106,23 @@ This project uses DVC to version large datasets, models, and pipelines alongside
 🚀 Setup
 
 1. Install DVC
-   pip install dvc
+   - pip install dvc
 2. Initialize DVC(This creates a .dvc directory with the internal configuration files.)
-   dvc init
+   - dvc init
 3. Configure Remote Storage
-   mkdir -p D:\AI-projects\dvc-storage
-   dvc remote add -d localstorage D:\AI-projects\dvc-storage
-   🛠️ Usage
+   - mkdir -p D:\AI-projects\dvc-storage
+   - dvc remote add -d localstorage D:\AI-projects\dvc-storage
+     🛠️ Usage
 4. Track Data
-   dvc add data/MachineLearningRating_v3.txt # Creates data/MachineLearningRating_v3.txt.dvc
-   git add data/MachineLearningRating_v3.txt.dvc .gitignore
-   git commit -m "Track dataset with DVC"
+   - dvc add data/MachineLearningRating_v3.txt # Creates data/MachineLearningRating_v3.txt.dvc
+   - git add data/MachineLearningRating_v3.txt.dvc .gitignore
+   - git commit -m "Track dataset with DVC"
 5. Push to your remote repository
-   git push origin task-2
+   - git push origin task-2
 6. Push Data to Local Remote Storage
-   dvc push
+   - dvc push
 7. Verify Your Setup
-   # Check DVC status
-   dvc status
-   # Check DVC remotes
-   dvc remote list
+   - dvc status # Check DVC status
+   - dvc remote list # Check DVC remotes
 8. Verification
    ![Successful DVC Push](image-1.png)
