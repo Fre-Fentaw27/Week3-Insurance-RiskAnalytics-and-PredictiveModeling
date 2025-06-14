@@ -8,8 +8,10 @@ This project performs exploratory data analysis (EDA) on an insurance portfolio 
 
 Week3-Insurance-RiskAnalytics-and-PredictiveModeling/
 │
+├── .dvc/
 ├── data/ # Raw and processed data
-│ └── MachineLearningRating_v3.txt # Original dataset
+│ └── MachineLearningRating_v3.txt
+│ └── MachineLearningRating_v3.txt.dvc # Original dataset
 │
 ├── notebooks/ # Jupyter notebooks for exploratory analysis
 │ └── eda.ipynb # Main EDA notebook
@@ -43,6 +45,8 @@ Week3-Insurance-RiskAnalytics-and-PredictiveModeling/
 
 - Python 3.12.4
 - Git
+
+### Task 1:Project Planning - EDA & Stats
 
 ### Installation
 
@@ -93,3 +97,34 @@ Week3-Insurance-RiskAnalytics-and-PredictiveModeling/
 Loss Ratio Heatmap by Province and Vehicle Type
 Temporal Trend of Monthly Claims vs Premiums
 Vehicle Make Risk Profile (Top 10 highest/lowest claim ratios)
+
+### Data Version Control (DVC)
+
+📌 Overview
+This project uses DVC to version large datasets, models, and pipelines alongside Git. DVC tracks data files in remote storage (e.g., S3, local) while Git manages metadata (.dvc files) for reproducibility.
+
+🚀 Setup
+
+1. Install DVC
+   pip install dvc
+2. Initialize DVC(This creates a .dvc directory with the internal configuration files.)
+   dvc init
+3. Configure Remote Storage
+   mkdir -p D:\AI-projects\dvc-storage
+   dvc remote add -d localstorage D:\AI-projects\dvc-storage
+   🛠️ Usage
+4. Track Data
+   dvc add data/MachineLearningRating_v3.txt # Creates data/MachineLearningRating_v3.txt.dvc
+   git add data/MachineLearningRating_v3.txt.dvc .gitignore
+   git commit -m "Track dataset with DVC"
+5. Push to your remote repository
+   git push origin task-2
+6. Push Data to Local Remote Storage
+   dvc push
+7. Verify Your Setup
+   # Check DVC status
+   dvc status
+   # Check DVC remotes
+   dvc remote list
+8. Verification
+   ![Successful DVC Push](image-1.png)
