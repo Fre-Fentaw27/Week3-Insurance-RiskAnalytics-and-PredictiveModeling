@@ -17,7 +17,9 @@ Week3-Insurance-RiskAnalytics-and-PredictiveModeling/
 │ └── eda.ipynb # Main EDA notebook
 │
 ├── scripts/ # Python scripts for reproducible analysis
-│ └── eda.py # Script version of EDA
+│ └── statistical_testing_task3.py
+│ └── segmentation_analysis_task3.py
+│ └── hypothesis_testing_task3.py
 │
 ├── outputs/ # Generated outputs
 │ ├── figures/ # Visualizations and plots
@@ -126,3 +128,31 @@ This project uses DVC to version large datasets, models, and pipelines alongside
    - dvc remote list # Check DVC remotes
 8. Verification
    ![Successful DVC Push](image-1.png)
+
+### Task 3: Hypothesis Testing
+
+## 📌 Overview
+
+This project performs statistical hypothesis testing on insurance data to identify significant risk drivers and profit margins. The analysis helps inform segmentation strategy and pricing decisions.
+
+## 🔍 Hypothesis Tests Performed
+
+1. **Tracking Device Impact**
+
+   - Claim Frequency (Chi-square test)
+   - Claim Severity (t-test)
+   - Profit Margin (t-test)
+
+2. **Gender Differences**
+   - Claim Frequency (Chi-square test)
+   - Claim Severity (t-test)
+   - Profit Margin (t-test)
+3. 🚀 How to Run
+
+   - Clone the repository
+
+   - Navigate to project directory
+
+   - Run the analysis script:
+     - cd scripts/
+     - python statistical_testing_task3.py
