@@ -6,3 +6,7 @@ plotly
 dvc
 scipy
 numpy
+scikit-learn 
+xgboost 
+shap 
+joblib  

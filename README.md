@@ -20,6 +20,10 @@ Week3-Insurance-RiskAnalytics-and-PredictiveModeling/
 │ └── statistical_testing_task3.py
 │ └── segmentation_analysis_task3.py
 │ └── hypothesis_testing_task3.py
+│ └── data_preparation_task4.py
+│ └── severity_model_task4.py
+│ └── claim_probability_task4.py
+│ └── premium_optimization_task4.py
 │
 ├── outputs/ # Generated outputs
 │ ├── figures/ # Visualizations and plots
@@ -156,3 +160,56 @@ This project performs statistical hypothesis testing on insurance data to identi
    - Run the analysis script:
      - cd scripts/
      - python statistical_testing_task3.py
+
+### Task 4: Statistical Modeling
+
+## 📌 Overview
+
+This project implements a machine learning system for insurance premium optimization using statistical modeling techniques. The system predicts claim probabilities and severities to calculate risk-based premiums that balance profitability and competitiveness.
+
+### 🤖 Modeling Techniques
+
+1. **Linear Regression**
+
+   - Baseline model for claim severity
+   - Provides interpretable coefficients
+
+2. **Random Forests**
+
+   - Handles non-linear relationships
+   - Robust to outliers
+   - Built-in feature importance
+
+3. **XGBoost**
+   - State-of-the-art gradient boosting
+   - Regularization prevents overfitting
+   - Handles mixed data types well
+
+### 📈 Model Evaluation
+
+**Claim Severity Models:**
+
+- ✅ Root Mean Squared Error (RMSE)
+- ✅ R-squared (R²) score
+
+**Claim Probability Models:**
+
+- ✅ Accuracy
+- ✅ Precision/Recall
+- ✅ F1-score
+- ✅ ROC-AUC
+
+### 🚀 Usage
+
+1. Prepare data:
+
+- python data_preparation_task4.py
+
+2. Train models:
+
+- python severity_model_task4.py
+- python claim_probability_task4.py
+
+3. Optimize premiums:
+
+- python premium_optimization.py
